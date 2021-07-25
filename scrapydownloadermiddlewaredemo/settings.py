@@ -1,4 +1,4 @@
-# Scrapy settings for downloadermiddlewaredemo project
+# Scrapy settings for scrapydownloadermiddlewaredemo project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -7,13 +7,13 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'downloadermiddlewaredemo'
+BOT_NAME = 'scrapydownloadermiddlewaredemo'
 
-SPIDER_MODULES = ['downloadermiddlewaredemo.spiders']
-NEWSPIDER_MODULE = 'downloadermiddlewaredemo.spiders'
+SPIDER_MODULES = ['scrapydownloadermiddlewaredemo.spiders']
+NEWSPIDER_MODULE = 'scrapydownloadermiddlewaredemo.spiders'
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-# USER_AGENT = 'downloadermiddlewaredemo (+http://www.yourdomain.com)'
+# USER_AGENT = 'scrapydownloadermiddlewaredemo (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
@@ -50,8 +50,8 @@ ROBOTSTXT_OBEY = True
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 DOWNLOADER_MIDDLEWARES = {
-    'downloadermiddlewaredemo.middlewares.RandomUserAgentMiddleware': 543,
-    'downloadermiddlewaredemo.middlewares.ChangeResponseMiddleware': 544,
+    'scrapydownloadermiddlewaredemo.middlewares.RandomUserAgentMiddleware': 543,
+    'scrapydownloadermiddlewaredemo.middlewares.ChangeResponseMiddleware': 544,
 }
 
 # Enable or disable extensions
@@ -63,7 +63,7 @@ DOWNLOADER_MIDDLEWARES = {
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 # ITEM_PIPELINES = {
-#    'downloadermiddlewaredemo.pipelines.DownloadermiddlewaredemoPipeline': 300,
+#    'scrapydownloadermiddlewaredemo.pipelines.DownloadermiddlewaredemoPipeline': 300,
 # }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
